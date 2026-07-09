@@ -58,7 +58,7 @@ public class ProductController {
                                                 @RequestPart MultipartFile imageFile) throws IOException {
         Product product1 =null;
         try {
-             product1=service.updateProduct(id,product,imageFile);
+            product1=service.updateProduct(id,product,imageFile);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
